@@ -18,6 +18,16 @@ klient.assignTrip(wycieczka);
 System.out.println(klient.getInfo());
 
 
+
+
+//for (String[] s: msg) {
+//	for(String s2: s) {
+//		System.out.println(s2);
+//	}
+//}  
+
+// pêtla for each - slajd 192
+ 
 	}
 
 }
@@ -35,3 +45,15 @@ System.out.println(klient.getInfo());
 
 // 7 /4 = 1
 // 7.0 / 4 = 1.75
+
+
+//slajd 185 , kod martwy
+
+// public static boolean DEBUG = true
+
+// if (DEBUG) {
+
+ //}
+
+
+// 
