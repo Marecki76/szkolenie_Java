@@ -1,5 +1,6 @@
 package ex06;
 
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Date {
@@ -36,7 +37,7 @@ public class Date {
 
 
 	// drugi sposób
-	///**
+	/**
 	 public static Date of(String s, String separator) {
 	 StringTokenizer tokenizer = new StringTokenizer(separator);
 	 int i = 0;
@@ -52,10 +53,10 @@ public class Date {
 	 int day = Integer.parseInt(array[2]);
 	 return new Date(year, month, day);
 	 }
-//*/
+*/
 	
-//trzeci sposób	
-	/**
+//trzeci sposób, Scanner	
+	///**
 	 public static Date of(String s, String separator) {
 	 Scanner scanner = new Scanner(s);
 	 scanner.useDelimiter(separator);
@@ -65,5 +66,5 @@ public class Date {
 	 scanner.close();
  return new Date(year, month, day);
  }
-*/
+//*/
 }
