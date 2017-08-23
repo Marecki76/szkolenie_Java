@@ -1,4 +1,4 @@
-package Biuro_podrozy_dalej;
+package Cwicz4_9_Biuro_podrozy_dalej;
 
 import date_cwicz3_3.Date;
 
