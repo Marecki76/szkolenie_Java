@@ -7,6 +7,7 @@ public class Date {
 	int day;
 	
 	
+	
 	public Date(int year, int month, int day) {
 		
 		this.year=year;
@@ -17,9 +18,9 @@ public class Date {
 		
 	}
 
-	public String getInfo() {
-		return year + "/" + month + "/" + day;
-	//return String.format()	
+	public String toString() { // zamiast getInfo dajemy toString i kasujemy getInfo w klasie Test
+		//return year + "/" + month + "/" + day;
+	return String.format("%d/%d/%d", year, month, day);	
 	}
 	
 }

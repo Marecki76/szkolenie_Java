@@ -23,7 +23,7 @@ public class Trip {
 	
 	//metody
 	public String getInfo() {
-		return String.format("from %s to %s, %s", start.getInfo(), end.getInfo(), destination);
+		return String.format("from %s to %s, %s", start, end, destination);
 		
 	
 }

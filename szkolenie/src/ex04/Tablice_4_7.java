@@ -17,18 +17,18 @@ public class Tablice_4_7 {
 					
 		}
 		
-		long start =System.nanoTime();
+		long start =System.currentTimeMillis();
 		for(int i=0; i<size; i++) {
 			tab2[i] = tab1[i];
 		}
-			long stop =System.nanoTime();
-			System.out.println("Kopiowanie w pêtli trwa³o " + (stop - start)/1e6 + " ms");		
+			long stop =System.currentTimeMillis();
+			System.out.println("Kopiowanie w pêtli trwa³o " + (stop - start) + " ms");		
 			
 			
-			start = System.nanoTime();
+			start = System.currentTimeMillis(); // lub nanoTime, wtedy dodajemy /1e6 (bo nano do milisekund
 			System.arraycopy(tab1, 0, tab2, 0, size);
-			stop = System.nanoTime();
-			System.out.println("Kopiowanie za pomoc¹ arraycopy trwa³o " + (stop - start)/1e6 + " ms");
+			stop = System.currentTimeMillis();
+			System.out.println("Kopiowanie za pomoc¹ arraycopy trwa³o " + (stop - start) + " ms");
 	}
 	}
 
