@@ -53,6 +53,17 @@ public class Date {
 	 int day = Integer.parseInt(array[2]);
 	 return new Date(year, month, day);
 	 }
+	 
+	 
+	 // 
+	  * public void addCustomer(Customer c String ds);
+	    public Customer[] getCustomers(String ds);
+	     
+	   Odseparowanie czêœci bazodanowej od reszty.
+	  
+	   
+	 
+	 
 */
 	
 //trzeci sposób, Scanner	

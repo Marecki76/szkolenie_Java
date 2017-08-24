@@ -7,6 +7,7 @@ public class AbroadTrip extends Trip {
 		super(start, end, destination);
 	}
 
+
 	@Override
 	public int getPrice() {
 		return super.getPrice() + insurance;
