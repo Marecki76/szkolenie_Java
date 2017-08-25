@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1250" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-08-25T14:59:05</date>
+  <millis>1503665945393</millis>
+  <sequence>0</sequence>
+  <logger>ex12</logger>
+  <level>INFO</level>
+  <class>ex12.MainHandler</class>
+  <method>addCustomer</method>
+  <thread>1</thread>
+  <message>Dodano nowego klienta); Name: Jan Kowalski
+Address: Niska 5, 60-335 Rumia
+Has the following trip: null
+</message>
+</record>
+</log>
