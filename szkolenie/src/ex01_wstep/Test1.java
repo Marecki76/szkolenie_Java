@@ -1,4 +1,4 @@
-package szkolenie;
+package ex01_wstep;
 
 public class Test1 {
 public void changeValue(int val) {

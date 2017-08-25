@@ -1,4 +1,4 @@
-package Cwicz5_2_Biuropodrozy_cd;
+package ex05_Cwicz5_2_Biuropodrozy_cd;
 
 public class TravelOffice {
 	private Customer[] customers = new Customer[2];

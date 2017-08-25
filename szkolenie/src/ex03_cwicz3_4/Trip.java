@@ -1,6 +1,6 @@
 package ex03_cwicz3_4;
 
-import date_cwicz3_3.Date;
+import ex03_date_cwicz3_3.Date;
 
 public class Trip {
 

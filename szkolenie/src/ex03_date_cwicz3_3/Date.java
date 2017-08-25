@@ -1,4 +1,4 @@
-package date_cwicz3_3;
+package ex03_date_cwicz3_3;
 
 public class Date {
 	

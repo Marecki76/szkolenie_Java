@@ -1,6 +1,7 @@
 package ex08_Cwicz8_3;
 
 import java.util.Scanner;
+import java.util.Map.Entry;
 
 public class MainHandler implements UserInterface {
 
@@ -86,34 +87,69 @@ public class MainHandler implements UserInterface {
 
 	@Override
 	public void assign() {
-		
-		
+		System.out.print("Nazwa klienta? ");
+		String name = sc.next();
+
+		Customer customer = to.findCustomerByName(name);
+		if (customer == null) {
+			System.out.println("Nie znaleziono klienta o nazwisku '" + name + "'\n");
+			return;
+		}
+
+		System.out.print("Trip id? ");
+		String id = sc.next();
+
+		Trip trip = to.getTrips().get(id);
+		if (trip == null) {
+			System.out.println("Pod tym id nie ma takiej wycieczki '" + id + "'\n");
+			return;
+		}
+		customer.assignTrip(trip);
 	}
 
 	@Override
 	public boolean removeCustomer() {
-		
-		return false;
+		System.out.print("Nazwa klienta? ");
+		String customerName = sc.next();
+
+		Customer c = to.findCustomerByName(customerName);
+		if (c == null) {
+			System.out.println("Nie znaleziono klienta o nazwisku\n");
+			return false;
+		}
+		to.removeCustomer(c);
+
+		System.out.println("Klient zosta³ usuniêty...\n");
+		return true;
 	}
 
 	@Override
 	public boolean removeTrip() {
-		
-		return false;
+		System.out.print("Wprowad¿ id wycieczki: ");
+		String id = sc.next();
+		boolean success = to.removeTrip(id);
+		if (!success) {
+			System.out.println("Nie znaleziono wycieczki\n");
+			return false;
+		}
+		System.out.println("Wycieczka zosta³a usuniêta...\n");
+		return true;
 	}
 
 	@Override
 	public void showTrips() {
-		
-		
+		System.out.println("Lista wycieczek:");
+		for (Entry<String, Trip> entry : to.getTrips().entrySet()) {
+			System.out.println(entry.getKey() + ": " + entry.getValue());
+		}
+		System.out.println();
 	}
+
 
 	@Override
 	public void showCustomers() {
-		
-	System.out.println(to);
-		
-		
+		System.out.println("Lista klientów:");
+		System.out.println(to);
 	}
 
 }

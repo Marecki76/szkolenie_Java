@@ -1,6 +1,6 @@
-package Cwicz5_2_Biuropodrozy_cd;
+package ex05_Cwicz5_2_Biuropodrozy_cd;
 
-import date_cwicz3_3.Date;
+import ex03_date_cwicz3_3.Date;
 
 public class DomesticTrip extends Trip {
 	

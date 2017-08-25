@@ -1,12 +1,14 @@
-package Cwicz4_9_Biuro_podrozy_dalej;
+package ex05_Cwicz5_2_Biuropodrozy_cd;
 
 public class Address {
 	
 	//atybuty
 	
-	String city; //miasto
-	String zip; //kod pocztowy
-	String street; //ulica
+	// zamieniamy na private
+	
+	private String city; //miasto
+	private String zip; //kod pocztowy
+	private String street; //ulica
 	
 	//konstruktor
 	
@@ -20,7 +22,7 @@ public class Address {
 
 //metody
 	
-	public String getInfo() {
+	public String toString() { // refaktoring - zmiana na toString
 		return String.format("%s, %s %s", street, zip, city);
 		
 		

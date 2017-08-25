@@ -1,12 +1,12 @@
-package Cwicz4_9_Biuro_podrozy_dalej;
+package ex05_Cwicz5_2_Biuropodrozy_cd;
 
 public class Customer {
 	
 	//atrybuty
 	
-	String name; //imiê, nazwisko
-	Address address; //adres
-	Trip trip; //wycieczka, na któr¹ jedzie klient
+	private String name; //imiê, nazwisko
+	private Address address; //adres
+	private Trip trip; //wycieczka, na któr¹ jedzie klient
 	
     public Customer(String name) {
 		this.name=name;
@@ -22,9 +22,9 @@ public class Customer {
     this.trip=trip;
     }
     
-   public String getInfo() {
+   public String toString() {
 	   
-return String.format("%s%nAddress: %s%n%s" , name, address.getInfo(), trip.getInfo());	   
+return String.format("%s%nAddress: %s%n%s" , name, address, trip);	   
    }
    //return String.format("from %s to %s, %s", start.getInfo(), end.getInfo(), destination);  
     

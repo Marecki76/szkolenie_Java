@@ -26,9 +26,20 @@ public void addTrip(String id, Trip trip) {
 	trips.put(id, trip);
 }
 	
-public void removeTrip(String id) {
+public boolean removeTrip(String id) {
 	trips.remove(id);
+	return false;
 }
+
+/**
+public boolean removeTrip(String id) {
+if (id != null) {
+	return trips.remove(id) != null;
+}
+return false;
+}
+
+*/
 	
 	public void addCustomer(Customer customer) {
 		
@@ -58,5 +69,21 @@ public void removeTrip(String id) {
 			//report += customers[i] + "\n";
 		//}
 		return report;
+	}
+
+	public Customer findCustomerByName(String name) {
+		for (Customer c : customers) {
+			if (c.toString().startsWith("Name: " + name + "\r\n")) {
+				return c;
+			}
+		}
+		return null;
+	}
+
+	public boolean removeCustomer(Customer c) {
+		if (c != null) {
+			return customers.remove(c);
+		}
+		return false;
 	}
 }

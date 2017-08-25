@@ -1,4 +1,4 @@
-package szkolenie;
+package ex01_wstep;
 public class Test3 {
 public void changeValue(Date val) {
 val.day = 10;

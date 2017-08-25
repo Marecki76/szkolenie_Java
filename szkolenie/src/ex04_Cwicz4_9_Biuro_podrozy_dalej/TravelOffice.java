@@ -1,6 +1,6 @@
-package Cwicz4_9_Biuro_podrozy_dalej;
+package ex04_Cwicz4_9_Biuro_podrozy_dalej;
 
-import date_cwicz3_3.Date;
+import ex03_date_cwicz3_3.Date;
 
 public class TravelOffice {
 	Customer[] customers = new Customer[2];
